@@ -1,0 +1,87 @@
+body{
+    scroll-behavior: smooth;
+}
+#about{
+    transition: .5s all;
+    scroll-behavior: smooth;
+
+}
+.aboutWrap{
+    max-width: 1000px;
+    width: 94%;
+    padding: 3rem 0 7rem 0 !important;
+    background-color: #0A192F;
+    margin: auto;
+
+}
+
+.title{
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+}
+
+.title span{
+    color: #64FFDA;
+    font-family: 'SF Mono', sans-serif !important;
+}
+
+.title h3{
+    font-size: 24px;
+    color: #8892B0;
+    margin: 0 15px;
+}
+.title hr{border: none;
+    border-bottom: 1px solid #8892b0d1;
+    width: 40%;
+    background-color: #8892b0d1 !important;
+    height: 1px !important;
+    
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content{
+    flex-basis: 50%;
+}
+
+
+.content .technology{
+    max-width: 250px;
+    color: #8892B0;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'SF Mono', sans-serif !important;
+    font-size: 13px;
+}
+
+.content .technology li{
+    margin-bottom: 10px;
+}
+
+.content .technology li i{
+    color: #64FFDA;
+}
+.content p{
+    color: #8892B0;
+    font-size: 16px;
+    line-height: 25px;
+}
+.content a span{
+    color: #64FFDA;
+    font-size: 16px;
+}
+.image img{
+    max-width: 300px;
+    width: auto;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.about{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,118 @@
+
+
+@import url('http://fonts.cdnfonts.com/css/sf-mono');
+
+
+header {
+    width: 100%;
+    background-color:#0A192F;
+    position: fixed;
+    overflow: hidden;
+
+}
+
+body{
+    scroll-behavior: smooth;
+
+}
+
+header .navbar {
+    max-width: 1250px;
+    width: 92%;
+    /* padding: 0rem 0; */
+    padding-top: 1rem;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0A192F;
+    z-index: 999;
+}
+
+
+.logo img{
+    width: 60px;
+}
+
+.logo h2{
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 76%, 50% 100%, 0% 75%);
+    background-color: #64FFDA;
+    padding: 12px 14px;
+    z-index: 10px;
+    color: #0A192F;
+    font-size: 24px !important;
+
+}
+/* 
+.log h2{
+    font-size: 30px;
+    color: #64FFDA;
+}
+
+.logo span{
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 76%, 50% 100%, 0% 75%);
+    background-color: white;
+    padding: 10px 12px;
+    z-index: 10px;
+    
+} */
+
+
+
+.hamburger {
+    display: none;
+    position: absolute;
+    top: 1.6rem;
+    right: 2rem;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-self: start;
+}
+
+.nav-item {
+    padding: 0 0 0 1.5rem;
+}
+
+.nav-link {
+    color: #919CB9;
+    font-family: 'SF Mono', sans-serif !important;
+    font-size: 13px;
+                                                
+}
+
+.nav-link  span{
+    color: #64FFDA;
+}
+
+@media screen and (max-width:560px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: 100%;
+        flex-direction: column;
+        justify-content: start;
+        /* background-color: var(--darkgrey); */
+        background-color: #172A45;
+        width: 100%;
+        height: 100%;
+        text-align: start;
+        transition: 0.4s;
+        margin-top: -20px;
+        padding-top: 100px;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 1.5rem 0;
+        font-size: 1.8rem;
+    }
+}

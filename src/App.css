@@ -1,0 +1,62 @@
+@import url('http://fonts.cdnfonts.com/css/sf-mono');
+
+html {
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+  font-family: 'Nunito', sans-serif;
+  background-color: #0A192F;
+  scroll-behavior: smooth !important; 
+
+}
+
+
+
+ul {
+  list-style: none;
+}
+i{
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.primary-color {
+  color: var(--primary);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button {
+  padding: 8px 0;
+  border-radius: 100px;
+  background-color: #43DDE6;
+  color: rgb(0, 0, 0);
+  padding: 10px 30px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+
+
+
+@media only screen and (max-width: 1300) {
+  .sticky-icon, .sticky-text {
+    display: none !important;
+    opacity: none;
+
+}
+}
